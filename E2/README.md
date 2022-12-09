@@ -8,23 +8,6 @@ O resultado esperado é uma código com pyspark que retorne o total liquido da e
 
 ## Solução
 
-Para resolver este problema, vamos utilizar o PySpark.
+Para resolver este problema, vamos utilizar o PySpark com um Python Notebook.
 
-Começaremos criando um ambiente virtual para baixar os requisitos
-
-```bash
-
-# Criando o ambiente virtual
-python -m venv venv_e2 
-
-# Instalando os requisitos
-pip install -r requirements.txt
-```
-
-
-```python
-transacoes = [{'transacao_id':1, 'total_bruto':3000, 'desconto_percentual':6.99},
-              {'transacao_id':2, 'total_bruto':57989, 'desconto_percentual':1.45},
-              {'transacao_id':4, 'total_bruto':1, 'desconto_percentual':None},
-              {'transacao_id':5, 'total_bruto':34, 'desconto_percentual':0.0}]
-```
+Como o notebook é mais flexível em relação aos comentários e da a possibilidade de escrever texto em markdown no 'meio' do código, vou fazer a evolução e explicação da resolução por lá.
