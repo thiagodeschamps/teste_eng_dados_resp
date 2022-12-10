@@ -1,4 +1,5 @@
-select cliente.nome, sum(transacao.valor_total*contrato.percentual/100)
+select cliente.nome, 
+round(sum((contrato.percentual*(transacao.valor_total*(1-coalesce(transacao.percentual_desconto, 0)/100)))/100), 2) as valor
 from desafio_engenheiro.dbo.contrato
 join desafio_engenheiro.dbo.transacao
 on transacao.contrato_id = contrato.contrato_id
